@@ -53,4 +53,4 @@ Splunk will automatically rename the sourcetype based on the data that's sent.
 **** Release Notes ****
 
 v0.1: Apr 2017
-        - Initial release
+        - Initial release, only works for alerts at this point in time. Plans to extend to other sourcetypes
