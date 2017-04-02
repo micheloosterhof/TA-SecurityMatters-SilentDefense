@@ -39,3 +39,9 @@ export = system
 [viewstates]
 access = read : [ * ], write : [ * ]
 export = system
+
+### WORKFLOWS
+
+[workflow_actions]
+access = read : [ * ], write : [ admin ]
+export = system

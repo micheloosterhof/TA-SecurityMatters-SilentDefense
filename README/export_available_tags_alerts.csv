@@ -1,0 +1,50 @@
+Tag;Description
+{sdVersion};the version of SilentDefense
+{alertId};the alert unique identifier
+{sensorName};the name of the sensor
+{engineName};the name of the detection engine
+{dstNetworkName};the name of the monitored network
+{dstHostName};the name of the monitored host
+{tsMillisec};the timestamp in milliseconds since Jan 01 1970
+{tsFormatted};the timestamp formatted as MMM dd yyyy HH:mm:ss
+{tsFormattedRFC5424};the syslog-formatted timestamp according to RFC5424 (yyyy-MM-ddTHH:mm:ss.SZ)
+{l2Proto};the datalink protocol
+{l3Proto};the network protocol
+{l4Proto};the transport protocol
+{l7Proto};the application protocol
+{srcMac};the source MAC address
+{srcIp};the source IP address
+{srcPort};the source port
+{dstMac};the destination MAC address
+{dstIp};the destination IP address
+{vlan};the VLAN
+{dstPort};the destination port
+{severity};the alert severity (textual)
+{severityNum};the alert severity (numeric) 0 Undefined, 1 Informational, 2 Low, 3 Medium, 4 High, 5 Critical
+{status};the alert status
+{profId};the ID of the profile
+{profModName};the name of the profile or module
+{upDataLength};the length of the upstream data
+{downDataLength};the length of the downstream data
+{pcapSha1};the SHA-1 digest of the pcap file
+{typeId};a unique identifier of the SilentDefense event type
+{name};a short description of the SilentDefense event type
+{desc};a more detailed description of the SilentDefense event type
+{streamDir};whether the alert detail regards an upstream or downstream message
+{fieldPath};the path to the application message field involved in the DPBI alert detail
+{fieldVal};the value of the unusual field for LAN message not allowed and DPBI unusual field alert details
+{expFieldVals};the expected value(s) for the field (depends on the alert detail type: could be a single value, a range of values, a set of values)
+{strEnc};the character encoding of the unusual string field value
+{expStrEnc};the expected encoding of the string field value
+{strScript};the Unicode script of the unusual string field value
+{expStrScripts};the expected Unicode script(s) of the string field value
+{strUnusualChars};the unusual characters of the string field value
+{expStrChars};the expected characters of a string field value
+{feaState};the frequent event aggregation state (i.e. None, Enter, Exit, Info)
+{feaAlertCount};the number of aggregated alerts
+{feaAlertDetailCount};the number of aggregated alert details
+{feaStartMillisec};the start timestamp of the frequent event aggregation in milliseconds since Jan 01 1970
+{feaStartFormatted};the start timestamp of the frequent event aggregation formatted as MMM dd yyyy HH:mm:ss
+{feaDurationSec};the duration of the frequent event aggregation in seconds
+{labels};an application oriented user defined set of tokens, space separated
+{tab};will render the tab character

@@ -1,0 +1,14 @@
+Tag;Description
+{timestampUnix};will render the log timestamp as a long integer (as for Unix timestamps)
+{timestampFormatted};will render the log timestamp formatted as MMM dd yyyy HH:mm:ss
+{timestampFormattedRFC5424};will render the log timestamp formatted according to RFC5424 (dd-MM-yyyyTHH:mm:ss.SZ)
+{device};will render the device that triggered the log (sensor name or Command Center)
+{previousHealthStatus};will render the previous health status
+{currentHealthStatus};will render the current health status
+{monitoredVariable};will render the monitored variable
+{currentValue};will render the value of the variable
+{currentHealthStatusNum};will render the current health status as a number between 0 and 10 (e.g., for use in the CEF severity field)
+{comma};will render the comma character
+{tab};will render the tab character
+{newline};will render the newline character
+{sdVersion};will render the version of SilentDefense
