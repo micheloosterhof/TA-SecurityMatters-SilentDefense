@@ -1,7 +1,7 @@
 *********************************************
 *
 * Add-On: SecurityMatters SilentDefense Add-On for Splunk
-* Current Version: 0.1
+* Current Version: 0.2
 * Last Modified: Apr 2017
 * Splunk Version: 6.5
 * Author: Michel Oosterhof
@@ -33,6 +33,7 @@ Splunk will automatically rename the sourcetype based on the data that's sent.
         securitymatters:silentdefense:alert:syslog
         securitymatters:silentdefense:asset:syslog
         securitymatters:silentdefense:flow:syslog
+        securitymatters:silentdefense:link:syslog
         securitymatters:silentdefense:health:syslog
 
 **** eventtypes ****
@@ -40,6 +41,7 @@ Splunk will automatically rename the sourcetype based on the data that's sent.
         securitymatters-silentdefense-alert
         securitymatters-silentdefense-asset
         securitymatters-silentdefense-flow
+        securitymatters-silentdefense-link
         securitymatters-silentdefense-health
 
 
@@ -52,5 +54,9 @@ Splunk will automatically rename the sourcetype based on the data that's sent.
 
 **** Release Notes ****
 
+v0.2: 5 April 2017
+        - Add support for flow data, link data, health data and asset data
+
 v0.1: Apr 2017
         - Initial release, only works for alerts at this point in time. Plans to extend to other sourcetypes
+
