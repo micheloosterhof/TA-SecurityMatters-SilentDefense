@@ -1,15 +1,11 @@
-*********************************************
-*
-* Add-On: SecurityMatters SilentDefense Add-On for Splunk
+# SecurityMatters SilentDefense Add-On for Splunk
+
 * Current Version: 0.2
 * Last Modified: Apr 2017
 * Splunk Version: 6.5
 * Author: Michel Oosterhof
-*
-*********************************************
 
-
-**** To get SilentDefense log data into Splunk ****
+## Installation and configuration
 
 1. Configure SilentDefense to send alerts to Splunk using the following template:
 
@@ -25,34 +21,36 @@ a default sourcetype of "securitymatters:silentdefense:syslog"
 Splunk will automatically rename the sourcetype based on the data that's sent.
 
 
-**** sourcetypes ****
+## Reference
 
-        securitymatters:silentdefense:syslog
-		* only used for initial data input
+### Sourcetypes
 
-        securitymatters:silentdefense:alert:syslog
-        securitymatters:silentdefense:asset:syslog
-        securitymatters:silentdefense:flow:syslog
-        securitymatters:silentdefense:link:syslog
-        securitymatters:silentdefense:health:syslog
+    Input data should be of sourcetype  ```securitymatters:silentdefense:syslog```
+    The add-on will rewrite the sourcetype based on received data to one of the following:
 
-**** eventtypes ****
+    * ```securitymatters:silentdefense:alert:syslog```
+    * ```securitymatters:silentdefense:asset:syslog```
+    * ```securitymatters:silentdefense:flow:syslog```
+    * ```securitymatters:silentdefense:link:syslog```
+    * ```securitymatters:silentdefense:health:syslog```
 
-        securitymatters-silentdefense-alert
-        securitymatters-silentdefense-asset
-        securitymatters-silentdefense-flow
-        securitymatters-silentdefense-link
-        securitymatters-silentdefense-health
+### Eventtypes
+
+    The data will have the following event types, with a 1-1 mapping of sourcetype to eventtype
+
+    * ```securitymatters-silentdefense-alert```
+    * ```securitymatters-silentdefense-asset```
+    * ```securitymatters-silentdefense-flow```
+    * ```securitymatters-silentdefense-link```
+    * ```securitymatters-silentdefense-health```
+
+### Data Models
+  
+    * Alert data is sent to the Network Intrusion Detection Data Model
+    * Flow and Link data is sent to the Network Traffic Data Model
 
 
-**** CIM mappings ****
-
-	Change Analysis
-	Intrusion Detection
-	Network Traffic
-
-
-**** Release Notes ****
+## Release Notes
 
 v0.2: 5 April 2017
         - Add support for flow data, link data, health data and asset data
